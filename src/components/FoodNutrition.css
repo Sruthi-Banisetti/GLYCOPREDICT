@@ -1,0 +1,81 @@
+.food-nutrition-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+
+.nutrition-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text-container {
+  width: 50%;
+}
+
+.text-container h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  text-align: left;
+}
+
+.text-container ul {
+  padding-left: 20px;
+  color: #34495e;
+  line-height: 1.5;
+}
+
+.image-container {
+  width: 40%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .nutrition-section {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .image-container {
+    order: -1; /* Move the image above the text */
+    width: 100%; /* Ensure full width on smaller screens */
+  }
+
+  .text-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-container h2 {
+    text-align: center;
+  }
+
+  .text-container ul {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container h2 {
+    font-size: 20px;
+  }
+
+  .text-container ul {
+    font-size: 14px;
+  }
+
+  .image-container img {
+    margin-bottom: 15px; /* Add spacing between image and text */
+  }
+}

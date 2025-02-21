@@ -1,0 +1,25 @@
+.carousel img {
+  width: 100%; /* Ensures the image takes up the full width of the carousel */
+  height: 85vh; /* Fixed height of 600px */
+  object-fit: cover;
+  background-size: cover; /* Ensures the image fills the container without distorting */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for visibility */
+  border-radius: 50%; /* Circular controls */
+  padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2)); /* Shadow effect on the controls */
+}
+
+/* Optional: For small screens, adjust the height proportionally */
+@media (max-width: 768px) {
+  .carousel img {
+    height: 100px; /* Adjust the height on smaller screens */
+  }
+}

@@ -1,0 +1,89 @@
+.health-wellness {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .main-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .section-content .text {
+    flex: 1;
+  }
+  
+  .section-image {
+    max-width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .section-content {
+      flex-direction: column-reverse; /* Default for other sections: text on top, image below */
+      text-align: center;
+    }
+  
+    .section-image {
+      max-width: 100%;
+      margin-bottom: 15px; /* Add spacing below the image */
+    }
+  
+    /* Special Rule for Weight Management Section */
+    .weight-management .section-content {
+      flex-direction: column; /* Stack image first, then text */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1, h2 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  
+    ul {
+      font-size: 0.9rem;
+    }
+  
+    .section-image {
+      max-width: 100%;
+      margin-bottom: 10px; /* Ensure proper spacing on very small screens */
+    }
+  }
+  

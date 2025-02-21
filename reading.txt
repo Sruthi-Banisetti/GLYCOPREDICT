@@ -1,0 +1,42 @@
+normal:
+{
+    "glucose": 70,
+    "bp": 70,
+    "age": 25,
+    "bmi": 22,
+    "pregnancies": 0
+}
+
+prediabetic:
+{
+    "glucose": 90,
+    "bp": 75,
+    "age": 30,
+    "bmi": 28,
+    "pregnancies": 2
+}
+diabetic:
+{
+    "glucose": 130,
+    "bp": 80,
+    "age": 45,
+    "bmi": 32,
+    "pregnancies": 4
+}
+
+type-2
+{
+    "glucose": 140,
+    "bp": 85,
+    "age": 50,
+    "bmi": 35,
+    "pregnancies": 5
+}
+type-1
+{
+    "glucose": 130,
+    "bp": 78,
+    "age": 30,
+    "bmi": 22,
+    "pregnancies": 0
+}

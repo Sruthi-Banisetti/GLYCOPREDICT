@@ -1,0 +1,93 @@
+/* Header.css */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2d013c; /* Dark purple background */
+  padding: 10px 20px;
+  color: #ffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Circular icon */
+}
+
+.title {
+  font-size: px;
+  font-weight: bold;
+
+  margin: 0;
+  color: #ffff;
+font-weight: bold;
+  font-style: italic;
+  
+
+}
+
+.account-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.account-icon img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.account-icon:hover img {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+  }
+
+  .icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .account-icon img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .icon img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .account-icon img {
+    width: 25px;
+    height: 25px;
+  }
+}

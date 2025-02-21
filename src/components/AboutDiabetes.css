@@ -1,0 +1,151 @@
+/* Base Styles */
+.about-diabetes {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: 'sans-serif', italic;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  color: #555;
+  margin-top: 30px;
+}
+
+h3 {
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+/* Diabetes Types */
+.diabetes-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.diabetes-type .info {
+  flex: 1;
+}
+
+.diabetes-type img {
+  max-width: 35%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.diabetes-type ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Type 2 Diabetes: Reversed Layout */
+.diabetes-type.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Tips Section */
+.tips {
+  background-color: #e9f7f6;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.tips ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Styling */
+
+/* General responsive adjustments for all sections */
+@media (max-width: 768px) {
+  .about-diabetes {
+    padding: 10px;
+  }
+
+  .diabetes-type {
+    flex-direction: column; /* Stack text and image for smaller screens */
+    align-items: flex-start; /* Align items to the left for a cleaner look */
+  }
+
+  .diabetes-type img {
+    max-width: 100%; /* Full-width image on small screens */
+    margin-top: 10px;
+    align-self: center; /* Center-align the image */
+  }
+
+  .diabetes-type .info {
+    text-align: left;
+  }
+}
+
+/* Specific adjustments for Type 2 Diabetes */
+@media (max-width: 768px) {
+  .diabetes-type.reverse {
+    flex-direction: column; /* Override reversed layout for small screens */
+    text-align: center; /* Center-align text and image */
+  }
+
+  .diabetes-type.reverse .info {
+    text-align: left; /* Align text left while centering the section */
+  }
+
+  .diabetes-type.reverse img {
+    max-width: 100%;
+    margin: 15px auto; /* Add vertical margin for spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .diabetes-type img {
+    max-width: 90%;
+  }
+
+  .tips {
+    font-size: 0.9rem;
+  }
+}

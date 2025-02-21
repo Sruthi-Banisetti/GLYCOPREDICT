@@ -1,0 +1,97 @@
+.dashboard {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+.dashboard h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Center and compact user details */
+.dashboard-details {
+  margin: 0 auto; /* Center the details block */
+  display: inline-block; /* Center align */
+  text-align: left; /* Align text to the left inside the block */
+}
+
+.dashboard-details p {
+  margin: 5px 0; /* Compact spacing between lines */
+  font-size: 16px;
+  color: #555;
+}
+
+.dashboard-details p strong {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Button Styling */
+button {
+  margin: 15px 5px;
+  padding: 8px 15px;
+  background-color: #c359c3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2d013c;
+}
+
+/* Links styling */
+.about-link {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align links */
+}
+
+.about-link a {
+  margin: 5px 0;
+  text-decoration: none;
+  color: #2d013c;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.about-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 15px;
+  }
+
+  .dashboard h2 {
+    font-size: 20px;
+  }
+
+  .dashboard-details p {
+    font-size: 14px;
+  }
+
+  button {
+    width: auto;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .about-link a {
+    font-size: 12px;
+  }
+}
