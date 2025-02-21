@@ -47,3 +47,9 @@ DIABETES_PREDICTION_PROJECT/
 │   ├── .gitignore
 │
 └── README.md  # Project Documentation
+
+Tech Stack
+Machine Learning: TensorFlow, Keras
+Backend: Flask, Python
+Frontend: HTML, CSS, JavaScript
+Database: MySQL
